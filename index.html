@@ -3,22 +3,32 @@
     <head>
         <title>Saru | Artist Page</title>
         <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css">
     </head>
+
+
     <body>
-        <header>
-            <img src="assets/website/avatar.png" width="200">
-            <h1>Saru</h1>
-            <nav>
+        <header class="main-header">
+            <div class="container">
+                <div class="container container-header">
+                    <img class="header-image-avatar" src="assets/website/avatar.png" width="200">
+                </div>
+                <div class="container container-header-title">
+                    <h1 class="banner-title-name">Saru</h1>
+                </div>
+            </div>
+            <nav class="nav main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                 </ul>
             </nav>
-            <hr>
         </header>
-        <section>
-            <h2>Welcome to my website</h2>
+
+
+        <section class="content-section container">
+            <h2 class="section-header">Welcome to my website</h2>
             <div>
                 <div>
                     <p>Hi, I am hobbyist 2D and 3D digital artist who has in the past drawn mostly for fun but am now looking to turn drawing and working with models and animations into a bigger focus of my life. If my work catches your interest I am happy to accept commissions so long as I have the capacity available.</p>
@@ -34,28 +44,36 @@
             </div>
             <hr>
         </section>
-        <section>
+
+
+        <section class="content-section container">
             <h2>Showcase</h2>
             <div>
                 <p>Below you can find some of my recent examples
             </div>
         </section>
-        <footer>
-            <h3>Social Media Links</h3>
-            <ul>
-                <li>
-                    <a href="https://twitter.com/SynfIV" target="_blank">
-                        <img src="assets/website/twitterlogo64x.png" alt="Twitter Link" width="32">
-                    </a>
-                <li>
-                    <a href="https://twitter.com/SynfIV" target="_blank">
-                        <img src="assets/website/furaffinitylogo.png" alt="FA Link" width="32">
-                    </a>
-                <li>
-                        <a href="https://bsky.app/profile/synfiv.bsky.social" target="_blank">
-                            <img src="assets/website/blueskylogo.svg" alt="Bluesky Link" width="32">
+
+
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="black">Social Media Links</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://twitter.com/SynfIV" target="_blank">
+                            <img src="assets/website/twitterlogo64x.png" alt="Twitter Link" width="32">
                         </a>
-            </ul>
+                    <li>
+                        <a href="https://twitter.com/SynfIV" target="_blank">
+                            <img src="assets/website/furaffinitylogo.png" alt="FA Link" width="32">
+                        </a>
+                    <li>
+                            <a href="https://bsky.app/profile/synfiv.bsky.social" target="_blank">
+                                <img src="assets/website/blueskylogo.svg" alt="Bluesky Link" width="32">
+                            </a>
+                </ul>
+             </div>
         </footer>
+
+
     </body>
 </html>
