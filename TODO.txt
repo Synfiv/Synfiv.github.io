@@ -1,0 +1,18 @@
+-Restructure the website to properly use divs
+    -Create sensible classes
+    -Structure everything into divs and justify stuff correctly
+-Add actual pricing
+-Create a gallery view
+-Create a showcase
+-Figure out a color scheme
+
+
+Temp storage
+<div class="header-brand">                              <!--Holder for name and quip-->
+
+                            <!--Name and Text-->
+                            <div class="header-brand-content">Saru</div>
+                            <div class="header-brand-content"><img src="assets/website/avatar.png" alt="avatar"></div>
+                    </div>
+
+                    <div class="header-brand"></div>                        <!--Spacer-->
