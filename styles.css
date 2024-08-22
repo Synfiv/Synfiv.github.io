@@ -23,19 +23,19 @@ a, a:visited {
     color: inherit;
 }
 
-Tablet Styles 
+/*Tablet Styles 
 @media only screen and (min-width: 576px) {
     .container {
         width: 540px;
     }
-}
+}*/
 
- Desktop Styles 
+ /*Desktop Styles 
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 1140px;
     }
-}
+}*/
 
 
 
