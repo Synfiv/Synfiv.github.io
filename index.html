@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     
-    <head>          <!--Information not directly related to the displayed content (browser title, meta)-->
+    <head>      <!--Information not directly related to the displayed content (browser title, meta)-->
         <title>Saru | Artist Page</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css">
@@ -10,75 +10,76 @@
     <!--Content Start-->
     <body>
 
-        <header>                                                                <!--Content at the top of the page-->   
-                <section class="header-background">                             <!--Background Image-->
-
-                    <div class="header-bar">
-                        <div class="header-brand">                              <!--Holder for name and quip-->
-    
-                                <!--Name and Text-->
-                                <!--<div class="header-brand-content"><img src="assets/website/brand.png" alt="avatar"></div>-->
-                                <div class="header-brand-content"><span class="header-title-text">Synfiv</span></div>
-                        </div>
-                        <div class="header-nav">                                <!--Navigation Bar Content-->
-    
-                                <!--Buttons-->
-                                <div class="header-nav-button"><a href="index.html">About</a></div>         
-                                <div class="header-nav-button"><a href="about.html">Gallery</a></div>       
-                                <div class="header-nav-button"><a href="index.html">Prices</a></div>        
-                                <div class="header-nav-button"><a href="index.html">Information</a></div>   
-                        </div>
-                        <div class="header-brand"></div>                        <!--Spacer-->
-                    </div>
-                </section>
+        <header id="header-background">     <!--Content at the top of the page-->   
+            <section class="header-section">
+                <ul id="header-nav-list">        <!--Navigation Bar Content-->
+                    <div id="header-brand-name">SARU</div>
+                    <!--Buttons-->
+                    <div class="header-nav-button"><a href="index.html">About</a></div>         
+                    <div class="header-nav-button"><a href="about.html">Gallery</a></div>       
+                    <div class="header-nav-button"><a href="prices.html">Prices</a></div>        
+                   <!-- <div class="header-nav-button"><a href="index.html">Information</a></div>  --> 
+                </ul>
+            </section>
         </header>
         <!--End of Header-->
 
 
+
         <!--Start of Page-->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-title">
-                        <h1>Welcome to my website</h1>
-                    </div>
-                    <p>Hi, I am hobbyist 2D and 3D digital artist who has in the past drawn mostly for fun but am now looking to turn drawing and working with models and animations into a bigger focus of my life. If my work catches your interest I am happy to accept commissions so long as I have the capacity available.</p>
-                    <p>Should you wish to get in contact with me for questions or commissions, you may do so at the social media links below, or via my E-mail address: synfiv@gmail.com</p>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="about-bginfo-section">
-
-            <div class="container">
-                <div class="about-bginfo-subsection">
-                    <div class="about-bginfo-title">2D Art</div>
-                    <div class="about-bginfo-content"><p>Most of my past experience in terms of drawing was mostly with sketching, in particular of Synths and robotic characters. In general the majority of my work has been on character subjects as-well as a few object oriented pieces, and I find it enjoyable to make broad landscapes and vistas despite being somewhat amateurish with them so far.</p> 
-                    <p>Despite the majority of my work being furry in nature, I will happily accept most other types of requests too, as-well as any furry species or setting within reason. Portraits or landscapes are both welcome.</p></div>
-                </div>
-
-                <div class="about-bginfo-subsection">
-                    <div class="about-bginfo-title">3D Art</div>
-                    <div class="about-bginfo-content"><p>As something I have had a few more years of experience with, I was an aspiring animator working mainly with 3DS Max, initially mostly on first-person weapon animations for Source games. I have since branched out to other engines too and made the switch to working with Blender instead, and more recently I've taken up 3D modelling as-well and am currently trying to learn how to model properly.</p></div>
-                </div>
-            </div>
-
-        </section>
-
+        <main>
+            <article>
+                <section class="about-section-grid-base" id="about-main-section-grid">
+                    <section id="about-paragraph-section">
+                        <header id="about-paragraph-header">
+                            <h1>Welcome to my website</h1>
+                        </header>
+                        <section>
+                                <h4>Hi, I am Saru. I am an artist in the process of expanding my hobby.</h4>
+                                <p>I work mostly with 2D digital art ranging from sketches to drawings and painting, and am experienced with 3D animation as-well as learning modelling. The focus of my art has thus far been on characters, and I have done some work with landscapes and objects.</p>
+                                <p></p> 
+                                <p>If my work catches your interest, I am open to commissions, details and contact information can be found in this website.</p>
+                        </section>
+                    </section>
+                    <section id="about-paragraph-section">
+                        <header>
+                            <h1>2D Art</h1>
+                        </header>
+                        <section id="about-service-paragraph">
+                            <p>This is text information</p>
+                            <ul id="about-service-list">
+                                <li>Sketches</li>
+                                <li>Paintings</li>
+                                <li>Characters</li>
+                                <li>Sketches</li>
+                                <li>Paintings</li>
+                                <li>Characters</li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+                <section id="showcase-gallery-layout">
+                    <div id="image-container"><img id="showcase-images" src="assets/gallery/art1.jpg" alt=""></div>
+                    <div id="image-container"><img id="showcase-images" src="assets/gallery/art3.jpg" alt=""></div>
+                    <div id="image-container"><img id="showcase-images" src="assets/gallery/art2.jpg" alt=""></div>
+                    <div id="image-container"><img id="showcase-images" src="assets/gallery/art4.jpg" alt=""></div>
+                </section>
+            </article>
+    
+        </main>
         <footer class="main-footer">
             <div class="container main-footer-container">
-                <h3 class="black">Social Media Links</h3>
+                <h3 class="black">Social Media Links:</h3>
                 <ul class="nav footer-nav">
-                    <li>
+                    <li id="social-link">
                         <a href="https://twitter.com/SynfIV" target="_blank">
                             <img src="assets/website/twitterlogo64x.png" alt="Twitter Link" width="32">
                         </a>
-                    <li>
+                    <li id="social-link">
                         <a href="https://twitter.com/SynfIV" target="_blank">
                             <img src="assets/website/furaffinitylogo.png" alt="FA Link" width="32">
                         </a>
-                    <li>
+                    <li id="social-link">
                             <a href="https://bsky.app/profile/synfiv.bsky.social" target="_blank">
                                 <img src="assets/website/blueskylogo.svg" alt="Bluesky Link" width="32">
                             </a>
