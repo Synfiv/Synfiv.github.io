@@ -11,13 +11,13 @@
     <body>
 
         <header id="header-background">     <!--Content at the top of the page-->   
-            <section class="header-section">
-                <ul id="header-nav-list">        <!--Navigation Bar Content-->
-                    <div id="header-brand-name">SARU</div>
+            <section class="section-flex-centered" id="header-navbar-holder">
+                <ul class="list-flex-row" id="header-navbar-list">        <!--Navigation Bar Content-->
+                    <div id="header-brand-name"><div id="brand-name-text">SARU</div></div>
                     <!--Buttons-->
-                    <div class="header-nav-button"><a href="index.html">About</a></div>         
-                    <div class="header-nav-button"><a href="about.html">Gallery</a></div>       
-                    <div class="header-nav-button"><a href="prices.html">Prices</a></div>        
+                    <div class="header-navbar-list-button"><a href="index.html">About</a></div>         
+                    <div class="header-navbar-list-button"><a href="about.html">Gallery</a></div>       
+                    <div class="header-navbar-list-button"><a href="prices.html">Prices</a></div>        
                    <!-- <div class="header-nav-button"><a href="index.html">Information</a></div>  --> 
                 </ul>
             </section>
@@ -28,41 +28,24 @@
 
         <!--Start of Page-->
         <main>
-            <article>
-                <section class="about-section-grid-base" id="about-main-section-grid">
-                    <section id="about-paragraph-section">
-                        <header id="about-paragraph-header">
+            <article class="article-main">
+                <section class="main-content-container section-flex-centered">
+                    <section class="main-content-container-paragraph">
+                        <header class="paragraph-title-container">
                             <h1>Welcome to my website</h1>
                         </header>
-                        <section>
+                        <section class="paragraph-text-container">
                                 <h4>Hi, I am Saru. I am an artist in the process of expanding my hobby.</h4>
-                                <p>I work mostly with 2D digital art ranging from sketches to drawings and painting, and am experienced with 3D animation as-well as learning modelling. The focus of my art has thus far been on characters, and I have done some work with landscapes and objects.</p>
-                                <p></p> 
-                                <p>If my work catches your interest, I am open to commissions, details and contact information can be found in this website.</p>
-                        </section>
-                    </section>
-                    <section id="about-paragraph-section">
-                        <header>
-                            <h1>2D Art</h1>
-                        </header>
-                        <section id="about-service-paragraph">
-                            <p>This is text information</p>
-                            <ul id="about-service-list">
-                                <li>Sketches</li>
-                                <li>Paintings</li>
-                                <li>Characters</li>
-                                <li>Sketches</li>
-                                <li>Paintings</li>
-                                <li>Characters</li>
-                            </ul>
+                                <p>I'm an artist who has been working with various forms of mostly 3D art for a few years now, and have recently began to focus on art more seriously.</p>
+                                <p>I am currently: <span id="commission-status">Accepting</span> Commissions</p>
                         </section>
                     </section>
                 </section>
-                <section id="showcase-gallery-layout">
-                    <div id="image-container"><img id="showcase-images" src="assets/gallery/art1.jpg" alt=""></div>
-                    <div id="image-container"><img id="showcase-images" src="assets/gallery/art3.jpg" alt=""></div>
-                    <div id="image-container"><img id="showcase-images" src="assets/gallery/art2.jpg" alt=""></div>
-                    <div id="image-container"><img id="showcase-images" src="assets/gallery/art4.jpg" alt=""></div>
+                <section class="main-content-container section-flex-centered" id="highlight-gallery">
+                    <div class="image-container"><img class="showcase-images" src="assets/gallery/art1.jpg" alt=""></div>
+                    <div class="image-container"><img class="showcase-images" src="assets/gallery/art3.jpg" alt=""></div>
+                    <div class="image-container"><img class="showcase-images" src="assets/gallery/art2.jpg" alt=""></div>
+                    <div class="image-container"><img class="showcase-images" src="assets/gallery/art4.jpg" alt=""></div>
                 </section>
             </article>
     
