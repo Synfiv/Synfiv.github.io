@@ -124,7 +124,6 @@ h4 {
     max-width: 75%;
     padding: 0 0 0 10px;
     margin-bottom: 5px;
-    filter: drop-shadow(rgb(0, 0, 0) 1px 1px 3px)
 }
 .paragraph-subcategory-title-container {
     display: flex;
@@ -133,6 +132,8 @@ h4 {
     align-items: center;
     padding: 0 0 0 10px;
     margin-bottom: 5px;
+}
+#dropshadow {
     filter: drop-shadow(rgb(0, 0, 0) 1px 1px 3px)
 }
 .paragraph-text-container {
