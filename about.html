@@ -5,22 +5,22 @@
         <title>Saru | Artist Page</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#footerLoad").load("template/footer.html");
+            });
+        </script>
+        <script>
+            $(function(){
+                $("#headerLoad").load("template/header.html");
+            });
+        </script>
     </head>
 
     <body>
-        <header id="header-background">
-            <section class="section-flex-centered" id="header-navbar-holder">
-                <ul class="list-flex-row" id="header-navbar-list">
-                    <div id="header-brand-name"><div id="brand-name-text">SARU</div></div>
-                    <div id="header-brand-name"><div id="brand-name-text">SARU</div></div>
-                    <div class="header-navbar-list-button"><a href="index.html">Main</a></div>         
-                    <div class="header-navbar-list-button"><a href="about.html">About</a></div>       
-                    <div class="header-navbar-list-button"><a href="pricing.html">Prices</a></div>       
-                </ul>
-            </section>
-        </header>
-
-
+        <div id="headerLoad"></div>
+        <!-- Content -->
         <main>
             <article class="article-main">
                 <section class="main-content-container section-flex-centered">
@@ -39,31 +39,7 @@
                 
             </article>
         </main>
-        <footer id="main-footer">
-            <section class="footer-content-container" id="main-footer-container">
-                <div class="footer-content-container" id="footer-nav-socials">
-                    <div class="avatar-image"><img src="assets/website/avatarsmall.png" alt=""></div>
-                </div>
-                <div class="footer-content-container" id="footer-nav-socials">
-                    <h3 class="black">Social Media Links:</h3>
-                    <ul class="list-flex-row" id="footer-nav-socials">
-                        <li id="social-link">
-                            <a href="https://twitter.com/SynfIV" target="_blank">
-                                <img src="assets/website/twitterlogo64x.png" alt="Twitter Link" width="32">
-                            </a>
-                        <li id="social-link">
-                            <a href="https://www.furaffinity.net/user/synfiv" target="_blank">
-                                <img src="assets/website/furaffinitylogo.png" alt="FA Link" width="32">
-                            </a>
-                        <li id="social-link">
-                                <a href="https://bsky.app/profile/synfiv.bsky.social" target="_blank">
-                                    <img src="assets/website/blueskylogo.svg" alt="Bluesky Link" width="32">
-                                </a>
-                    </ul>
-                </div>
-            </section>
-        </footer>
-
-
+        <!-- Content -->
+        <div id="footerLoad"></div>
     </body>
 </html>
