@@ -1,57 +1,59 @@
 <template>
   <q-layout view="lHh lpr lFf">
     <q-header>
-      <q-toolbar class="text-black">
-        <div class="col">
-          <div class="row flex-center">
-            <q-avatar>
-              <q-img src="src/assets/website/avatarsmall.png"></q-img>
-            </q-avatar>
-            <q-toolbar-title class="text-h3 text-weight-bolder"
-              >Saru</q-toolbar-title
-            >
+      <q-toolbar class="text-accent">
+        <div class="row col-12">
+          <div class="col-xs-0 col-sm-4 col-md-4">
+            <!--
+            <div class="row flex-center">
+              <q-avatar class="q-my-sm">
+                <q-img src="src/assets/website/SaruAvatar.svg"></q-img>
+              </q-avatar>
+              <q-toolbar-title class="text-h3 text-weight-bolder"
+                >Saru</q-toolbar-title
+              >
+            </div>
+          --></div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <q-tabs class="text-h5 text-weight-bold">
+              <q-route-tab label="Main" to="/" exact />
+              <q-route-tab label="About" to="/AboutPage" exact />
+              <q-route-tab label="Prices" to="/Prices" exact />
+            </q-tabs>
           </div>
-        </div>
-        <div class="col">
-          <q-tabs class="text-h5 text-weight-bold">
-            <q-tab>Main</q-tab>
-            <q-tab>About</q-tab>
-            <q-tab>Pricing</q-tab>
-          </q-tabs>
-        </div>
-        <div class="col">
-          <q-tabs>
-            <q-btn
-              icon="img:src/assets/website/twitter.svg"
-              href="https://twitter.com/SynfIV"
-              target="_blank"
-              size="max-content"
-              label="Twitter"
-              no-caps
-              outline
-              class="col-shrink q-mx-xs"
-            />
-            <q-btn
-              icon="img:src/assets/website/bluesky.svg"
-              href="https://bsky.app/profile/synfiv.bsky.social"
-              target="_blank"
-              size="max-content"
-              label="Bluesky"
-              no-caps
-              outline
-              class="col-shrink q-mx-xs"
-            />
-            <q-btn
-              icon="img:src/assets/website/furaffinity.svg"
-              href="https://www.furaffinity.net/user/synfiv"
-              target="_blank"
-              size="max-content"
-              label="Furaffinity"
-              no-caps
-              outline
-              class="col-shrink q-mx-xs"
-            />
-          </q-tabs>
+          <div class="flex col-xs-12 col-sm-4 col-md-4 flex-center">
+            <q-tabs
+              class="row q-gutter-x-sm q-my-sm flex-center justify-center"
+            >
+              <q-btn
+                icon="img:src/assets/website/twitter.svg"
+                href="https://twitter.com/SynfIV"
+                target="_blank"
+                size="max-content"
+                no-caps
+                outline
+                class="q-mx-xs bg-secondary"
+              />
+              <q-btn
+                icon="img:src/assets/website/bluesky.svg"
+                href="https://bsky.app/profile/synfiv.bsky.social"
+                target="_blank"
+                size="max-content"
+                no-caps
+                outline
+                class="q-mx-xs bg-secondary"
+              />
+              <q-btn
+                icon="img:src/assets/website/furaffinity.svg"
+                href="https://www.furaffinity.net/user/synfiv"
+                target="_blank"
+                size="max-content"
+                no-caps
+                outline
+                class="q-mx-xs bg-secondary"
+              />
+            </q-tabs>
+          </div>
         </div>
       </q-toolbar>
     </q-header>

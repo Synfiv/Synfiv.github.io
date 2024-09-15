@@ -16,7 +16,7 @@ $primary: #e19c3b;
 $secondary: #459ad6;
 $accent: #2f353c;
 
-$dark: #2f353c;
+$dark: #232931;
 $dark-page: #121212;
 
 $positive: #3be149;
@@ -29,10 +29,12 @@ $typography-font-family: "Quicksand", Quicksand !default;
 .body--light {
   background-color: #242a32;
 }
-
 .text-brand {
   color: #dfdfdf !important;
 }
 .border {
   border: 5px solid #dfdfdf;
+}
+.text-shadow {
+  text-shadow: 1px 1px 2px black;
 }
