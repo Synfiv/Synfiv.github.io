@@ -18,7 +18,7 @@
             <q-tabs class="text-h5 text-weight-bold">
               <q-route-tab label="Main" to="/" exact />
               <q-route-tab label="About" to="/AboutPage" exact />
-              <q-route-tab label="Prices" to="/Prices" exact />
+              <q-route-tab label="Prices" to="/PricesPage" exact />
             </q-tabs>
           </div>
           <div class="flex col-xs-12 col-sm-4 col-md-4 flex-center">

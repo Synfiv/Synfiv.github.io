@@ -1,107 +1,118 @@
 <template>
-  <q-page class="q-mx-xl q-my-sm">
+  <q-page class="row justify-center items-stretch content-stretch">
     <!--//////////////////-->
     <!--Stuff Starts Below-->
     <!--//////////////////-->
     <!--////////////////////////-->
     <!--Whole ass page container-->
-    <div class="text-grey-3 row wrap">
+    <div
+      class="column bg-accent items-stretch content-stretch col-lg-6 col-md-8 col-xs-12 no-wrap"
+    >
       <!--/////////////////////////////////////////////////-->
       <!--The top part where all the yapping and intro goes-->
-      <div
-        class="text-h4 column text-center q-pa-sm col-6"
-        style="min-width: 650px"
-      >
-        <q-bar class="bg-secondary"></q-bar>
+      <div class="column text-center col-shrink full-width">
         <!--///////////////////////////////////////////////////////////////-->
         <!--The container for all the three text fields so that they behave-->
         <q-card flat square class="column bg-accent">
           <!--////////////////////////////////////////////-->
-          <!--The container for the commission status part-->
+          <!--The container for the hi bit-->
           <q-card-section
             flat
-            class="row q-gutter-x-md text-h3 flex-center text-weight-medium text-primary self-center text-shadow"
-            style="max-width: 1000px"
+            class="text-h3 q-pa-xs bg-secondary column flex-center text-weight-medium text-primary text-shadow"
           >
-            <div class="col-12">Hi! I'm Saru</div>
-            <div>I'm currently:</div>
-            <div class="text-weight-bold text-secondary">accepting</div>
-            <div>commissions!</div>
+            <div>Hi! I'm Saru</div>
           </q-card-section>
 
           <q-card-section>
             <!--div so the image fucking behaves-->
-            <div style="min-height: 256px">
-              <q-img
-                src="src/assets/website/SaruAvatar.svg"
-                style="height: 256px; width: 256px"
-              ></q-img>
-            </div>
+            <q-img
+              src="src/assets/website/SaruAvatar.svg"
+              style="width: 256px; height: auto"
+            ></q-img>
           </q-card-section>
 
           <!--////////////////////////////////////////////////////-->
           <!--Container for long ass text trying to present myself-->
-          <q-card-section flat style="max-width: 1000px" class="self-center">
+          <q-card-section flat class="q-px-auto q-py-none">
             I'm a digital 2D and 3D artist living in Berlin and work mostly with
             drawing, sketching, animation and more. Here you can find my works
             and if you like what you see feel free to commission me.
           </q-card-section>
+          <!--////////////////////////////////////////////-->
+          <!--The container for the commission status part-->
+          <q-card-section
+            flat
+            class="row q-gutter-x-sm q-py-md text-h3 flex-center text-weight-medium text-primary self-center text-shadow"
+          >
+            <div>I'm currently</div>
+            <div class="text-weight-bold text-secondary">accepting</div>
+            <div>commissions!</div>
+          </q-card-section>
 
           <!--////////////////////////////////////////-->
           <!--Container for the short contact info bit-->
-          <q-card-section flat style="max-width: 1000px" class="self-center">
+          <q-card-section class="q-py-none">
             You can contact me through my accounts on social media, or
             alternatively via E-mail at:
           </q-card-section>
-          <q-card-section class="text-primary">synfiv@gmail.com</q-card-section>
+          <q-card-section class="text-primary q-py-none"
+            >synfiv@gmail.com</q-card-section
+          >
           <q-card-section></q-card-section>
         </q-card>
       </div>
 
       <!--////////////////////////////////////////-->
       <!--2nd Section - NEEDS DOING STILL-->
-      <div
-        class="q-pa-sm col-6 flex content-stretch items-stretch col-grow"
-        style="min-height: max-content; min-width: max-content"
-      >
-        <q-card class="flex col-auto">
-          <q-carousel
-            v-model="currentSlide"
-            style="width: max-content; height: max-content"
-            animated
-            transition-next="slide-left"
-            transition-prev="slide-right"
-            navigation
-            control-color="secondary"
-            swipeable
-            infinite
-            padding
-          >
-            <template v-slot:navigation-icon="{ active, btnProps, onClick }">
+      <div class="col-grow column">
+        <q-carousel
+          v-model="currentSlide"
+          animated
+          class="bg-accent col"
+          transition-next="slide-left"
+          transition-prev="slide-right"
+          navigation
+          control-color="secondary"
+          swipeable
+          padding
+          infinite
+          :fullscreen="fullscreen"
+        >
+          <template v-slot:navigation-icon="{ active, btnProps, onClick }">
+            <q-btn
+              v-bind="btnProps"
+              size="lg"
+              :icon="active ? 'circle' : 'radio_button_unchecked'"
+              @click="onClick"
+            />
+          </template>
+          <template #control>
+            <q-carousel-control position="top-left" class="text-center">
               <q-btn
-                v-bind="btnProps"
-                size="lg"
-                :icon="active ? 'circle' : 'radio_button_unchecked'"
-                flat
-                round
+                color="secondary"
+                text-color="grey-3"
+                icon="fullscreen"
                 dense
-                @click="onClick"
-              />
-            </template>
-            <q-carousel-slide
-              v-for="slide in slides"
-              :key="slide.name"
-              :name="slide.name"
-            >
+                @click="fullscreen = !fullscreen"
+              ></q-btn>
+            </q-carousel-control>
+          </template>
+          <q-carousel-slide
+            v-for="slide in slides"
+            :key="slide.name"
+            :name="slide.name"
+            class="column col"
+          >
+            <div class="flex flex-center q-pb-md col">
               <q-img
-                src="public/art1.jpg"
-                :ratio="1"
                 fit="contain"
-                style="min-height: 600px; max-width: 100%"
-              />
-            </q-carousel-slide>
-          </q-carousel>
-        </q-card>
+                class="col"
+                :src="slide.imgSrc1"
+                position="top"
+              ></q-img>
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
       </div>
     </div>
   </q-page>
@@ -116,32 +127,33 @@ export default {
   name: "IndexPage",
 
   setup() {
+    const fullscreen = ref(false);
     const currentSlide = ref("one");
     const slides = [
       {
         name: "one",
         title: "One",
-        imgSrc: "public/art1.jpg",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis delectus molestias architecto enim blanditiis culpa fugiat perspiciatis praesentium repellendus, fugit laboriosam dicta quae natus sint quam alias optio ea dolor.",
+        imgSrc1: "src/assets/gallery/gallery1.jpg",
       },
       {
         name: "two",
         title: "Two",
-        imgSrc: "src/assets/gallery/art2.jpg",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis delectus molestias architecto enim blanditiis culpa fugiat perspiciatis praesentium repellendus, fugit laboriosam dicta quae natus sint quam alias optio ea dolor.",
+        imgSrc1: "src/assets/gallery/gallery3.jpg",
       },
       {
         name: "three",
         title: "Three",
-        imgSrc: "src/assets/gallery/art4.jpg",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis delectus molestias architecto enim blanditiis culpa fugiat perspiciatis praesentium repellendus, fugit laboriosam dicta quae natus sint quam alias optio ea dolor.",
+        imgSrc1: "src/assets/gallery/gallery2.jpg",
+      },
+      {
+        name: "four",
+        title: "Four",
+        imgSrc1: "src/assets/gallery/gallery4.jpg",
       },
     ];
 
     return {
+      fullscreen,
       slides,
       currentSlide,
     };

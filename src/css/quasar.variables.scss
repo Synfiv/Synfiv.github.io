@@ -25,9 +25,11 @@ $info: #295aa3;
 $warning: #e6e047;
 
 $typography-font-family: "Quicksand", Quicksand !default;
+$body-font-size: var(--q-theme-font-size, 20px);
 
 .body--light {
   background-color: #242a32;
+  color: #eee;
 }
 .text-brand {
   color: #dfdfdf !important;

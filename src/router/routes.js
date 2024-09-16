@@ -1,12 +1,16 @@
 const routes = [
   {
     path: "/",
-    component: () => import("layouts/Mainheader.vue"),
+    component: () => import("src/layouts/MainHeader.vue"),
     children: [
       { path: "", component: () => import("pages/IndexPage.vue") },
       {
         path: "/aboutPage",
         component: () => import("src/pages/AboutPage.vue"),
+      },
+      {
+        path: "/pricesPage",
+        component: () => import("src/pages/PricesPage.vue"),
       },
     ],
   },
