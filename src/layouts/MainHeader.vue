@@ -3,17 +3,7 @@
     <q-header>
       <q-toolbar class="text-accent">
         <div class="row col-12">
-          <div class="col-xs-0 col-sm-4 col-md-4">
-            <!--
-            <div class="row flex-center">
-              <q-avatar class="q-my-sm">
-                <q-img src="src/assets/website/SaruAvatar.svg"></q-img>
-              </q-avatar>
-              <q-toolbar-title class="text-h3 text-weight-bolder"
-                >Saru</q-toolbar-title
-              >
-            </div>
-          --></div>
+          <div class="col-xs-0 col-sm-4 col-md-4"></div>
           <div class="col-xs-12 col-sm-4 col-md-4">
             <q-tabs class="text-h5 text-weight-bold">
               <q-route-tab label="Main" to="/" exact />

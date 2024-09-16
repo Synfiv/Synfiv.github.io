@@ -20,8 +20,9 @@
             flat
             class="text-h3 q-pa-xs bg-secondary column flex-center text-weight-medium text-primary text-shadow"
           >
-            <div>Hi! I'm Saru</div>
+            <div class="q-pa-md">Hi! I'm Saru</div>
           </q-card-section>
+          <q-separator class="bg-blue-8" size="5px"></q-separator>
 
           <q-card-section>
             <!--div so the image fucking behaves-->
@@ -55,7 +56,8 @@
             You can contact me through my accounts on social media, or
             alternatively via E-mail at:
           </q-card-section>
-          <q-card-section class="text-primary q-py-none"
+          <q-card-section
+            class="text-primary text-weight-bold text-shadow q-py-none"
             >synfiv@gmail.com</q-card-section
           >
           <q-card-section></q-card-section>
@@ -75,6 +77,7 @@
           control-color="secondary"
           swipeable
           padding
+          autoplay
           infinite
           :fullscreen="fullscreen"
         >
