@@ -16,32 +16,35 @@
               class="row q-gutter-x-sm q-my-sm flex-center justify-center"
             >
               <q-btn
-                icon="img:src/assets/website/twitter.svg"
                 href="https://twitter.com/SynfIV"
                 target="_blank"
                 size="max-content"
                 no-caps
                 outline
                 class="q-mx-xs bg-secondary"
-              />
+              >
+                <q-icon><q-img src="./website/bluesky.svg"></q-img></q-icon>
+              </q-btn>
               <q-btn
-                icon="img:src/assets/website/bluesky.svg"
                 href="https://bsky.app/profile/synfiv.bsky.social"
                 target="_blank"
                 size="max-content"
                 no-caps
                 outline
                 class="q-mx-xs bg-secondary"
-              />
+              >
+                <q-icon><q-img src="./website/twitter.svg"></q-img></q-icon>
+              </q-btn>
               <q-btn
-                icon="img:src/assets/website/furaffinity.svg"
                 href="https://www.furaffinity.net/user/synfiv"
                 target="_blank"
                 size="max-content"
                 no-caps
                 outline
                 class="q-mx-xs bg-secondary"
-              />
+              >
+                <q-icon><q-img src="./website/furaffinity.svg"></q-img></q-icon>
+              </q-btn>
             </q-tabs>
           </div>
         </div>

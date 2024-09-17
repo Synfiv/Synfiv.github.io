@@ -27,7 +27,7 @@
           <q-card-section>
             <!--div so the image fucking behaves-->
             <q-img
-              src="src/assets/website/SaruAvatar.svg"
+              src="./SaruAvatar.svg"
               style="width: 256px; height: auto"
             ></q-img>
           </q-card-section>
@@ -136,22 +136,22 @@ export default {
       {
         name: "one",
         title: "One",
-        imgSrc1: "src/assets/gallery/gallery1.jpg",
+        imgSrc1: "Gallery1.jpg",
       },
       {
         name: "two",
         title: "Two",
-        imgSrc1: "src/assets/gallery/gallery3.jpg",
+        imgSrc1: "Gallery2.jpg",
       },
       {
         name: "three",
         title: "Three",
-        imgSrc1: "src/assets/gallery/gallery2.jpg",
+        imgSrc1: "Gallery3.jpg",
       },
       {
         name: "four",
         title: "Four",
-        imgSrc1: "src/assets/gallery/gallery4.jpg",
+        imgSrc1: "Gallery4.jpg",
       },
     ];
 
