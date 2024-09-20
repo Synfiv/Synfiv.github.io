@@ -1,17 +1,27 @@
 <template>
   <q-layout view="lHh lpr lFf">
     <q-header>
-      <q-toolbar class="text-accent">
-        <div class="row col-12">
-          <div class="col-xs-0 col-sm-4 col-md-4"></div>
-          <div class="col-xs-12 col-sm-4 col-md-4">
+      <div class="row flex-center bg-accent full-width q-pa-sm">
+        <div>
+          <q-img
+            src="./website/SaruAvatar.svg"
+            style="width: 64px; height: 64px"
+          ></q-img>
+        </div>
+        <div class="text-h2 text-secondary text-weight-regular">Saru</div>
+      </div>
+      <q-separator size="4px" color="secondary"></q-separator>
+      <q-toolbar class="text-black">
+        <div class="row col">
+          <div class="col-xs-0 col-sm-4"></div>
+          <div class="col-xs-12 col-sm-2">
             <q-tabs class="text-h5 text-weight-bold">
               <q-route-tab label="Main" to="/" exact />
               <q-route-tab label="About" to="/AboutPage" exact />
               <q-route-tab label="Prices" to="/PricesPage" exact />
             </q-tabs>
           </div>
-          <div class="flex col-xs-12 col-sm-4 col-md-4 flex-center">
+          <div class="row col-xs-12 col-sm-2 justify-center">
             <q-tabs
               class="row q-gutter-x-sm q-my-sm flex-center justify-center"
             >
@@ -47,6 +57,7 @@
               </q-btn>
             </q-tabs>
           </div>
+          <div class="col-xs-0 col-sm-4"></div>
         </div>
       </q-toolbar>
     </q-header>

@@ -25,14 +25,25 @@ $info: #414952;
 $warning: #e6e047;
 
 $typography-font-family: "Quicksand", Quicksand !default;
-$body-font-size: var(--q-theme-font-size, 20px);
+$body-font-size: var(--q-theme-font-size, 1.3rem);
 
+.smallerFont {
+  font-size: 1rem;
+}
+.scalingBox {
+  width: 150px;
+  height: 150px;
+  font-size: 3em;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
 .body--light {
   background-color: #242a32;
   color: #eee;
-}
-.text-brand {
-  color: #dfdfdf !important;
 }
 .border {
   border: 5px solid #dfdfdf;

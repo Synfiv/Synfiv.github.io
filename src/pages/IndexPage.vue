@@ -1,121 +1,69 @@
 <template>
-  <q-page class="row justify-center items-stretch content-stretch">
-    <!--//////////////////-->
-    <!--Stuff Starts Below-->
-    <!--//////////////////-->
-    <!--////////////////////////-->
-    <!--Whole ass page container-->
-    <div
-      class="column bg-accent items-stretch content-stretch col-lg-6 col-md-8 col-xs-12 no-wrap"
-    >
-      <!--/////////////////////////////////////////////////-->
-      <!--The top part where all the yapping and intro goes-->
-      <div class="column text-center col-shrink full-width">
-        <!--///////////////////////////////////////////////////////////////-->
-        <!--The container for all the three text fields so that they behave-->
-        <q-card flat square class="column bg-accent">
-          <!--////////////////////////////////////////////-->
-          <!--The container for the hi bit-->
-          <q-card-section
-            flat
-            class="text-h3 q-pa-xs bg-secondary column flex-center text-weight-medium text-primary text-shadow"
+  <q-page style="height: 95vh">
+    <div class="row justify-center fit">
+      <div class="column bg-info col-xl-6 col-lg-8 col-md-10 col-xs-12 no-wrap">
+        <div class="column bg-accent col-grow">
+          <q-carousel
+            v-model="currentSlide"
+            class="col bg-accent"
+            transition-next="slide-left"
+            transition-prev="slide-right"
+            control-color="black"
+            animated
+            navigation
+            swipeable
+            infinite
+            arrows
+            :fullscreen="fullscreen"
           >
-            <div class="q-pa-md">Hi! I'm Saru</div>
-          </q-card-section>
-          <q-separator class="bg-blue-8" size="5px"></q-separator>
-
-          <q-card-section>
-            <!--div so the image fucking behaves-->
-            <q-img
-              src="./SaruAvatar.svg"
-              style="width: 256px; height: auto"
-            ></q-img>
-          </q-card-section>
-
-          <!--////////////////////////////////////////////////////-->
-          <!--Container for long ass text trying to present myself-->
-          <q-card-section flat class="q-px-auto q-py-none">
-            I'm a digital 2D and 3D artist living in Berlin and work mostly with
-            drawing, sketching, animation and more. Here you can find my works
-            and if you like what you see feel free to commission me.
-          </q-card-section>
-          <!--////////////////////////////////////////////-->
-          <!--The container for the commission status part-->
-          <q-card-section
-            flat
-            class="row q-gutter-x-sm q-py-md text-h3 flex-center text-weight-medium text-primary self-center text-shadow"
-          >
-            <div>I'm currently</div>
-            <div class="text-weight-bold text-secondary">accepting</div>
-            <div>commissions!</div>
-          </q-card-section>
-
-          <!--////////////////////////////////////////-->
-          <!--Container for the short contact info bit-->
-          <q-card-section class="q-py-none">
-            You can contact me through my accounts on social media, or
-            alternatively via E-mail at:
-          </q-card-section>
-          <q-card-section
-            class="text-primary text-weight-bold text-shadow q-py-none"
-            >synfiv@gmail.com</q-card-section
-          >
-          <q-card-section></q-card-section>
-        </q-card>
-      </div>
-
-      <!--////////////////////////////////////////-->
-      <!--2nd Section - NEEDS DOING STILL-->
-      <div class="col-grow column">
-        <q-carousel
-          v-model="currentSlide"
-          animated
-          class="bg-accent col"
-          transition-next="slide-left"
-          transition-prev="slide-right"
-          navigation
-          control-color="secondary"
-          swipeable
-          padding
-          autoplay
-          infinite
-          :fullscreen="fullscreen"
-        >
-          <template v-slot:navigation-icon="{ active, btnProps, onClick }">
-            <q-btn
-              v-bind="btnProps"
-              size="lg"
-              :icon="active ? 'circle' : 'radio_button_unchecked'"
-              @click="onClick"
-            />
-          </template>
-          <template #control>
-            <q-carousel-control position="top-left" class="text-center">
-              <q-btn
-                color="secondary"
-                text-color="grey-3"
-                icon="fullscreen"
-                dense
-                @click="fullscreen = !fullscreen"
-              ></q-btn>
-            </q-carousel-control>
-          </template>
-          <q-carousel-slide
-            v-for="slide in slides"
-            :key="slide.name"
-            :name="slide.name"
-            class="column col"
-          >
-            <div class="flex flex-center q-pb-md col">
-              <q-img
-                fit="contain"
-                class="col"
-                :src="slide.imgSrc1"
-                position="top"
-              ></q-img>
-            </div>
-          </q-carousel-slide>
-        </q-carousel>
+            <template #control>
+              <q-carousel-control>
+                <q-btn
+                  color="secondary"
+                  text-color="grey-3"
+                  icon="fullscreen"
+                  dense
+                  @click="fullscreen = !fullscreen"
+                ></q-btn>
+              </q-carousel-control>
+            </template>
+            <q-carousel-slide
+              v-for="slide in slides"
+              class=""
+              :key="slide.name"
+              :name="slide.name"
+            >
+              <q-img class="fit" fit="scale-down" :src="slide.imgSrc1"></q-img>
+            </q-carousel-slide>
+          </q-carousel>
+        </div>
+        <div class="column col-shrink text-center">
+          <q-separator size="2px"></q-separator>
+          <q-card flat square class="column bg-accent">
+            <q-card-section flat class="q-px-auto col-shrink q-py-none">
+              I'm Saru, a 2D/3D digital artist from Berlin working with
+              Sketches, Drawings, Animations and more
+            </q-card-section>
+            <q-card-section
+              flat
+              class="row q-gutter-x-sm col-shrink q-py-xs text-h3 flex-center text-weight-medium text-primary self-center text-shadow"
+            >
+              <div>I'm currently</div>
+              <div class="text-weight-bold text-secondary">accepting</div>
+              <div>commissions!</div>
+            </q-card-section>
+            <q-card-section class="q-py-xs col-shrink">
+              <div>
+                You can contact me through my accounts on social media, or
+                alternatively via E-mail at:
+              </div>
+              <div class="text-primary text-weight-bold text-shadow q-py-none">
+                synfiv@gmail.com
+              </div>
+            </q-card-section>
+          </q-card>
+          <q-separator size="2px"></q-separator>
+        </div>
       </div>
     </div>
   </q-page>
