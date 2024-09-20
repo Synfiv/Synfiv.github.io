@@ -1,8 +1,8 @@
 {
   "name": "synfiv-github-io",
   "version": "0.0.1",
-  "description": "Synfiv Website",
-  "productName": "Synfiv Website",
+  "description": "I draw stuff and things",
+  "productName": "Saru's Art Page",
   "author": "Synfiv <synfiv@gmail.com>",
   "private": true,
   "scripts": {
