@@ -14,6 +14,7 @@
             swipeable
             infinite
             arrows
+            autoplay
             :fullscreen="fullscreen"
           >
             <template #control>
