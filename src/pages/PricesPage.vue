@@ -48,9 +48,57 @@
       </div>
       <div class="column text-center col-grow full-width">
         <q-card flat square class="bg-accent q-py-md column col">
+          <q-separator
+                    inline
+                    size="4px"
+                    color="primary"
+                  ></q-separator>
+          <q-card-section
+            flat
+            class="text-h3 q-py-xs q-px-none bg-dark column flex-center text-weight-medium text-primary text-shadow"
+          >
+            <div class="q-pa-md">Base Cost</div>
+          </q-card-section>
+          <q-separator
+                    inline
+                    size="4px"
+                    color="primary"
+                  ></q-separator>
+          <q-separator
+                    inline
+                    size="10px"
+                    color="accent"
+                  ></q-separator>
           <div class="col-grow bg-accent">
             <q-list class="row">
               <!---->
+              <q-list class="col-grow">
+                <div>
+                  <q-item-section class="text-h2 text-primary bg-dark q-pb-sm"
+                    >Framing</q-item-section
+                  >
+                  <q-separator
+                    inline
+                    size="2px"
+                    color="secondary"
+                  ></q-separator>
+                </div>
+                <div class="row">
+                  <div class="column col no-wrap text-center">
+                    <q-item v-for="item in framingEntries" :key="item.label">
+                      <q-item-section class="col text-no-wrap smallerFont"
+                        >{{ item.label }}
+                      </q-item-section>
+                    </q-item>
+                  </div>
+                  <q-separator vertical color="grey-3" inset></q-separator>
+                  <div class="column col text-center">
+                    <q-item v-for="item in framingEntries" :key="item.price">
+                      <q-item-section>{{ item.price }} </q-item-section>
+                    </q-item>
+                  </div>
+                </div>
+              </q-list>
               <q-list class="col-grow">
                 <div>
                   <q-item-section class="text-h2 text-primary bg-dark q-pb-sm"
@@ -137,6 +185,27 @@
               </q-list>
             </q-list>
           </div>
+          <q-separator
+                    inline
+                    size="4px"
+                    color="primary"
+                  ></q-separator>
+          <q-card-section
+            flat
+            class="text-h3 q-py-xs q-px-none bg-dark column flex-center text-weight-medium text-primary text-shadow"
+          >
+            <div class="q-pa-md">Additional Costs</div>
+          </q-card-section>
+          <q-separator
+                    inline
+                    size="4px"
+                    color="primary"
+                  ></q-separator>
+          <q-separator
+                    inline
+                    size="10px"
+                    color="accent"
+                  ></q-separator>
           <div class="row col-grow">
             <!--
 
@@ -315,19 +384,19 @@ export default {
     const lineartEntries = ref([
       {
         label: "Rough Lines",
-        price: "10 €",
+        price: "5 €",
       },
       {
         label: "Sketched Lines",
-        price: "15 €",
+        price: "10 €",
       },
       {
         label: "Solid Lines",
-        price: "25 €",
+        price: "20 €",
       },
       {
         label: "Inked Lines",
-        price: "35 €",
+        price: "30 €",
       },
     ]);
     const colorEntries = ref([
@@ -341,7 +410,7 @@ export default {
       },
       {
         label: "Simple Tones",
-        price: "15 €",
+        price: "10 €",
       },
       {
         label: "Complex Tones",
@@ -355,14 +424,32 @@ export default {
       },
       {
         label: "Basic Shading",
-        price: "10 €",
+        price: "5 €",
       },
       {
         label: "Complex Shading",
-        price: "15 €",
+        price: "10 €",
       },
       {
         label: "Rendered Shading",
+        price: "20 €",
+      },
+    ]);
+    const framingEntries = ref([
+      {
+        label: "Headshot",
+        price: "5 €",
+      },
+      {
+        label: "Upper-Body",
+        price: "10 €",
+      },
+      {
+        label: "¾-Body",
+        price: "15 €",
+      },
+      {
+        label: "Full-Body",
         price: " 20€",
       },
     ]);
@@ -370,6 +457,7 @@ export default {
       lineartEntries,
       colorEntries,
       shadingEntries,
+      framingEntries,
     };
   },
 };

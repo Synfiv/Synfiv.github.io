@@ -71,8 +71,9 @@
           </q-card-section>
           <q-card-section flat>
             <div>
-              For more information, please view the Prices page where you can
-              find my terms and basic pricing.
+              For information about commissions, and pricing in particular, please view the Prices page where you can
+              find a breakdown.
+              I am happy to draw most subjects and characters with few exceptions and like to challenge myself even if the prompt is not something I am practiced with, though I reserve the right to decline a commission if I'm not personally comfortable with the themes or content involved. I tend to send frequent progress updates to show how the art develops, though if it gets too much I can be asked to reduce how often I do so. I aim to finish working on a piece within a couple of days to a week, depending on the emount of effort required, and try to provide an estimate of when it will be wrapped up. Frequent input is welcome.
             </div>
           </q-card-section>
         </q-card>
