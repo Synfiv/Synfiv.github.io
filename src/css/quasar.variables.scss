@@ -1,0 +1,53 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary: #e19c3b;
+$secondary: #459ad6;
+$accent: #2f353c;
+
+$dark: #232931;
+$dark-page: #121212;
+
+$positive: #3be149;
+$negative: #c10015;
+$info: #414952;
+$warning: #e6e047;
+
+$typography-font-family: "Quicksand", Quicksand !default;
+$body-font-size: var(--q-theme-font-size, 1.3rem);
+
+.smallerFont {
+  font-size: 1rem;
+}
+.scalingBox {
+  width: 150px;
+  height: 150px;
+  font-size: 3em;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.body--light {
+  background-color: #242a32;
+  color: #eee;
+}
+.border {
+  border: 5px solid #dfdfdf;
+}
+.text-shadow {
+  text-shadow: 1px 1px 2px black;
+}
