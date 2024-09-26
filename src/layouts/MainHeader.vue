@@ -26,7 +26,7 @@
               class="row q-gutter-x-sm q-my-sm flex-center justify-center"
             >
               <q-btn
-                href="https://twitter.com/SynfIV"
+                href="https://bsky.app/profile/synfiv.bsky.social"
                 target="_blank"
                 size="max-content"
                 no-caps
@@ -36,7 +36,7 @@
                 <q-icon><q-img src="./website/bluesky.svg"></q-img></q-icon>
               </q-btn>
               <q-btn
-                href="https://bsky.app/profile/synfiv.bsky.social"
+                href="https://twitter.com/SynfIV"
                 target="_blank"
                 size="max-content"
                 no-caps
