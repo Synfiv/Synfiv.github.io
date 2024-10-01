@@ -2,42 +2,17 @@
   <q-page style="height: 95vh">
     <div class="row justify-center fit">
       <div class="column bg-info col-xl-6 col-lg-8 col-md-10 col-xs-12 no-wrap">
-        <div class="column bg-accent col-grow">
-          <q-carousel
-            v-model="currentSlide"
-            class="col bg-accent"
-            transition-next="slide-left"
-            transition-prev="slide-right"
-            control-color="black"
-            animated
-            navigation
-            swipeable
-            infinite
-            arrows
-            autoplay
-            :fullscreen="fullscreen"
-          >
-            <template #control>
-              <q-carousel-control>
-                <q-btn
-                  color="secondary"
-                  text-color="grey-3"
-                  icon="fullscreen"
-                  dense
-                  @click="fullscreen = !fullscreen"
-                ></q-btn>
-              </q-carousel-control>
-            </template>
-            <q-carousel-slide
-              v-for="slide in slides"
-              class=""
-              :key="slide.name"
-              :name="slide.name"
-            >
-              <q-img class="fit" fit="scale-down" :src="slide.imgSrc1"></q-img>
-            </q-carousel-slide>
-          </q-carousel>
-        </div>
+        <!-- Images -->
+         <div class="row">
+
+           <div class="row col-6">
+               <q-img class="col-3" fit="scale-down" src="Gallery1.jpg"></q-img>
+               <q-img class="col-9" fit="fill" src="Gallery2.jpg"></q-img>
+           </div>
+         </div>
+
+
+        <!-- The Rest of the Page-->
         <div class="column col-shrink text-center">
           <q-separator size="2px"></q-separator>
           <q-card flat square class="column bg-accent">

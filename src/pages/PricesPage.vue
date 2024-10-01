@@ -48,327 +48,52 @@
       </div>
       <div class="column text-center col-grow full-width">
         <q-card flat square class="bg-accent q-py-md column col">
-          <q-separator
-                    inline
-                    size="4px"
-                    color="primary"
-                  ></q-separator>
-          <q-card-section
-            flat
-            class="text-h3 q-py-xs q-px-none bg-dark column flex-center text-weight-medium text-primary text-shadow"
-          >
-            <div class="q-pa-md">Base Cost</div>
-          </q-card-section>
-          <q-separator
-                    inline
-                    size="4px"
-                    color="primary"
-                  ></q-separator>
-          <q-separator
-                    inline
-                    size="10px"
-                    color="accent"
-                  ></q-separator>
-          <div class="col-grow bg-accent">
-            <q-list class="row">
-              <!---->
-              <q-list class="col-grow">
-                <div>
-                  <q-item-section class="text-h2 text-primary bg-dark q-pb-sm"
-                    >Framing</q-item-section
-                  >
-                  <q-separator
-                    inline
-                    size="2px"
-                    color="secondary"
-                  ></q-separator>
-                </div>
-                <div class="row">
-                  <div class="column col no-wrap text-center">
-                    <q-item v-for="item in framingEntries" :key="item.label">
-                      <q-item-section class="col text-no-wrap smallerFont"
-                        >{{ item.label }}
-                      </q-item-section>
-                    </q-item>
-                  </div>
-                  <q-separator vertical color="grey-3" inset></q-separator>
-                  <div class="column col text-center">
-                    <q-item v-for="item in framingEntries" :key="item.price">
-                      <q-item-section>{{ item.price }} </q-item-section>
-                    </q-item>
-                  </div>
-                </div>
-              </q-list>
-              <q-list class="col-grow">
-                <div>
-                  <q-item-section class="text-h2 text-primary bg-dark q-pb-sm"
-                    >Lineart</q-item-section
-                  >
-                  <q-separator
-                    inline
-                    size="2px"
-                    color="secondary"
-                  ></q-separator>
-                </div>
-                <!---->
-                <div class="row">
-                  <div class="column col no-wrap text-center">
-                    <q-item v-for="item in lineartEntries" :key="item.label">
-                      <q-item-section class="col text-no-wrap smallerFont"
-                        >{{ item.label }}
-                      </q-item-section>
-                    </q-item>
-                  </div>
-                  <q-separator vertical color="grey-3" inset></q-separator>
-                  <div class="column col text-center">
-                    <q-item v-for="item in lineartEntries" :key="item.price">
-                      <q-item-section>{{ item.price }} </q-item-section>
-                    </q-item>
-                  </div>
-                </div>
-              </q-list>
-              <!---->
-              <q-list class="col-grow">
-                <div>
-                  <q-item-section class="text-h2 text-primary bg-dark q-pb-sm"
-                    >Color</q-item-section
-                  >
-                  <q-separator
-                    inline
-                    size="2px"
-                    color="secondary"
-                  ></q-separator>
-                </div>
-                <div class="row">
-                  <div class="column col no-wrap text-center">
-                    <q-item v-for="item in colorEntries" :key="item.label">
-                      <q-item-section class="col text-no-wrap smallerFont"
-                        >{{ item.label }}
-                      </q-item-section>
-                    </q-item>
-                  </div>
-                  <q-separator vertical color="grey-3" inset></q-separator>
-                  <div class="column col text-center">
-                    <q-item v-for="item in colorEntries" :key="item.price">
-                      <q-item-section>{{ item.price }} </q-item-section>
-                    </q-item>
-                  </div>
-                </div>
-              </q-list>
-              <!---->
-              <q-list class="col-grow">
-                <div>
-                  <q-item-section class="text-h2 text-primary bg-dark q-pb-sm"
-                    >Shading</q-item-section
-                  >
-                  <q-separator
-                    inline
-                    size="2px"
-                    color="secondary"
-                  ></q-separator>
-                </div>
-                <div class="row">
-                  <div class="column col no-wrap text-center">
-                    <q-item v-for="item in shadingEntries" :key="item.label">
-                      <q-item-section class="col text-no-wrap smallerFont"
-                        >{{ item.label }}
-                      </q-item-section>
-                    </q-item>
-                  </div>
-                  <q-separator vertical color="grey-3" inset></q-separator>
-                  <div class="column col text-center">
-                    <q-item v-for="item in shadingEntries" :key="item.price">
-                      <q-item-section>{{ item.price }} </q-item-section>
-                    </q-item>
-                  </div>
-                </div>
-              </q-list>
-            </q-list>
-          </div>
-          <q-separator
-                    inline
-                    size="4px"
-                    color="primary"
-                  ></q-separator>
-          <q-card-section
-            flat
-            class="text-h3 q-py-xs q-px-none bg-dark column flex-center text-weight-medium text-primary text-shadow"
-          >
-            <div class="q-pa-md">Additional Costs</div>
-          </q-card-section>
-          <q-separator
-                    inline
-                    size="4px"
-                    color="primary"
-                  ></q-separator>
-          <q-separator
-                    inline
-                    size="10px"
-                    color="accent"
-                  ></q-separator>
-          <div class="row col-grow">
-            <!--
 
-            First Card
-            -->
-            <q-card flat class="col-md-6 col-sm-12 bg-accent column">
-              <!--Headline-->
-              <div class="text-h2 bg-dark q-pb-sm text-primary text-shadow">
-                Characters
-              </div>
-              <q-bar style="height: 2px" class="bg-secondary"></q-bar>
-
-              <!--Pricing Body
-
-              -->
-              <q-card-section class="text-left no-wrap column bg-info col">
-                <!--First Line
-
-                -->
-                <div class="col">
-                  <div class="row q-pa-md bg-accent flex-center fit">
-                    <div class="col-6 text-h5 flex-center text-shadow">
-                      Additional Characters:
-                    </div>
-                    <div class="col-6 row text-h5 flex-center text-shadow">
-                      <div>
-                        <span>An added 50% of</span>
-                        <span class="q-pl-sm text-primary">base cost</span>
-                      </div>
-                    </div>
-                    <div class="col-12 q-pt-md">
-                      Each additional character will add an extra 50% of the
-                      base (Lineart, Color, Shading) cost
-                    </div>
-                  </div>
-                  <q-separator size="1px" color="secondary"></q-separator>
-                </div>
-
-                <!--Second Line
-
-                -->
-                <div class="col">
-                  <div class="row q-pa-md bg-accent flex-center fit">
-                    <div class="col-6 text-h5 flex-center text-shadow">
-                      Complex Bodies / Complex Patterns
-                    </div>
-                    <div class="col-6 text-h5 text-shadow text-center">
-                      Free <q-icon name="east"></q-icon> Variable
-                    </div>
-                    <div class="col-12 q-pt-md">
-                      With particularly compelx characters there may be an
-                      additional charge depending on the added time and effort
-                      required
-                    </div>
-                  </div>
-                  <q-separator size="1px" color="secondary"></q-separator>
-                </div>
-
-                <!--Third Line
-
-                -->
-                <div class="col">
-                  <div class="row q-pa-md bg-accent flex-center fit">
-                    <div class="col-6 text-h5 flex-center text-shadow">
-                      Outfits/Clothing and Objects
-                    </div>
-                    <div class="col-6 text-h5 text-shadow text-center">
-                      Free <q-icon name="east"></q-icon> Variable
-                    </div>
-                    <div class="col-12 q-pt-md">
-                      Depending on technical complexity these may be free, or
-                      incur a charge based on the time and effort required
-                    </div>
-                  </div>
-                  <q-separator size="1px" color="secondary"></q-separator>
-                </div>
-              </q-card-section>
-            </q-card>
-
-            <!--Second Card
-
-            -->
-            <q-card square flat class="col-md-6 col-sm-12 bg-accent column">
-              <div class="text-h2 bg-dark text-primary q-pb-sm text-shadow">
-                Extras
-              </div>
-              <q-bar style="height: 2px" class="bg-secondary q-pb-none"></q-bar>
-
-              <!--Pricing Body
-
-            -->
-              <q-card-section class="text-left column bg-info col">
-                <!--First Line
-
-            -->
-                <div class="col">
-                  <div class="row q-pa-md bg-accent flex-center fit">
-                    <div class="col-6 text-h5 q-pl-sm text-shadow">
-                      Additional Views/Multiple Panels
-                    </div>
-                    <div class="col-6 text-h5 text-shadow text-center">
-                      Variable
-                    </div>
-                    <div class="col-12 q-pt-md">
-                      Price will depend on how much re-drawing is necessary for
-                      the additional views
-                    </div>
-                  </div>
-                  <q-separator size="1px" color="secondary"></q-separator>
-                </div>
-
-                <!--Second Line
-
-            -->
-                <div class="col">
-                  <div class="row q-pa-md bg-accent flex-center fit">
-                    <div class="col-6 text-h5 flex-center text-shadow">
-                      Edited / Alternative Versions
-                    </div>
-                    <div class="col-6 text-h5 text-shadow text-center">
-                      Free <q-icon name="east"></q-icon> Variable
-                    </div>
-                    <div class="col-12 q-pt-md">
-                      Simple edits can be included for no charge, however
-                      complex changes may incur a charge
-                    </div>
-                  </div>
-                  <q-separator size="1px" color="secondary"></q-separator>
-                </div>
-
-                <!--Third Line
-
-            -->
-                <div class="col">
-                  <div class="row q-pa-md bg-accent flex-center fit">
-                    <div class="col-6 text-h5 flex-center text-shadow">
-                      Backgrounds
-                    </div>
-                    <div class="col-6 text-h5 text-shadow text-center">
-                      Free <q-icon name="east"></q-icon> Variable
-                    </div>
-                    <div class="col-12 q-pt-md">
-                      A basic background (color, simplistic scene) is provided
-                      for free, a detailed background may incure a charge
-                    </div>
-                  </div>
-                  <q-separator size="1px" color="secondary"></q-separator>
-                </div>
-              </q-card-section>
-            </q-card>
-            <q-card
+          <!-- Headline -->
+          <q-section>
+            <q-separator
+                      inline
+                      size="4px"
+                      color="primary"
+                    ></q-separator>
+            <q-card-section
               flat
-              class="col-12 row justify-around items-center bg-accent"
+              class="text-h3 q-py-xs q-px-none bg-dark column flex-center text-weight-medium text-primary text-shadow"
             >
-              <q-card-section class="row justify-around">
-                <div
-                  class="bg-dark q-px-xl q-py-md text-h4 text-primary text-shadow text-weight-medium"
-                >
-                  NSFW subjects add +5 € to the final price
-                </div>
-              </q-card-section>
-            </q-card>
-          </div>
+              <div class="q-pa-md">Headshot</div>
+            </q-card-section>
+            <q-separator
+                      inline
+                      size="4px"
+                      color="primary"
+                    ></q-separator>
+          </q-section>
+
+          <!-- Contents-->
+          <q-section class="row justify-center">
+            <div class="col-6 column bg-red">
+              <div class="row bg-blue">
+                <div class="col-6">Rough Sketch</div>
+                <div class="col-6">€€€</div>
+              </div>
+              <div class="row bg-blue">
+                <div class="col-6">Refined Sketch</div>
+                <div class="col-6">€€€</div>
+              </div>
+              <div class="row bg-blue">
+                <div class="col-6">Inked</div>
+                <div class="col-6">€€€</div>
+              </div>
+              <div class="row bg-blue">
+                <div class="col-6">Simple Colors</div>
+                <div class="col-6">€€€</div>
+              </div>
+              <div class="row bg-blue">
+                <div class="col-6">Simple Colors</div>
+                <div class="col-6">€€€</div>
+              </div>
+            </div>
+          </q-section>
         </q-card>
       </div>
     </div>
