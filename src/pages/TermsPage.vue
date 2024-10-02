@@ -1,5 +1,5 @@
 <template>
-  <q-page style="max-width: 100%;" padding>
+  <q-page class="column flex-center" style="max-width: 100%;" padding>
 
 
     <!-- Main Div-->
