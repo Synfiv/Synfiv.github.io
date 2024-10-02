@@ -37,7 +37,7 @@
       <!-- Intro Text -->
       <q-card-section style="width: 40%; min-width: 300px;" class="flex flex-center text-center text-para text-weight-medium q-px-sm text-accent">
             <div>
-              I'm Saru, I'm a 25 year old hobbyist 2D/3D digital artist living in Berlin who likes to work with Sketches, Drawings, Animations and more
+              I can just fuck this up
             </div>
       </q-card-section>
       <q-separator size="2px" style="width: 60%;" class="rounded-borders bg-accent"></q-separator>

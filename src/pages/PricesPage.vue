@@ -34,25 +34,28 @@
       <q-separator size="2px" style="width: 30%;" class="rounded-borders bg-accent"></q-separator>
 
       <!-- Pricing -->
-      <q-card-section style="width: 100%; min-width: 300px;" class="row flex-center text-center text-body1 text-weight-medium q-px-sm text-accent">
-
+       <q-card-section style="width: 100%; min-width: 300px;" class="row flex-center text-center text-body1 text-weight-medium q-px-sm text-accent items-stretch" >
         <!-- List -->
-         <q-card-section class="col-12-xs col-md-4">
+        <q-card-section class="col-12-xs col-md-4">
            <q-card style="max-width: 50%; min-width: 300px;" class="dense-text bg-primary column col">
-             <q-card-section class="q-py-sm">Base Cost</q-card-section>
+             <q-card-section class="q-py-sm">Lineart</q-card-section>
              <q-separator size="2px" style="width: 90%;" class="rounded-borders self-center bg-accent"></q-separator>
              <q-card-section>
                <q-card-section class="row text-no-wrap q-py-xs">
-                 <div class="col text-left">Headshot</div>
+                 <div class="col text-left">Rough Sketch</div>
                  <div class="col text-right">5 €</div>
                </q-card-section>
                <q-card-section class="row text-no-wrap q-py-xs">
-                 <div class="col text-left">Upper Body</div>
+                 <div class="col text-left">Refined Sketch</div>
                  <div class="col text-right">10 €</div>
                </q-card-section>
                <q-card-section class="row text-no-wrap q-py-xs">
-                 <div class="col text-left">Full Body</div>
-                 <div class="col text-right">20 €</div>
+                 <div class="col text-left">Solid Lines</div>
+                 <div class="col text-right">15 €</div>
+               </q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Inked Lines</div>
+                 <div class="col text-right">15 €</div>
                </q-card-section>
              </q-card-section>
            </q-card>
@@ -60,8 +63,34 @@
 
          <!-- List -->
          <q-card-section class="col-12-xs col-md-4">
+           <q-card style="max-width: 50%; min-width: 300px;" class="dense-text full-height bg-primary column col">
+             <q-card-section class="q-py-sm">Framing</q-card-section>
+             <q-separator size="2px" style="width: 90%;" class="rounded-borders self-center bg-accent"></q-separator>
+             <q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Headshot</div>
+                 <div class="col text-right">+5 €</div>
+               </q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Upper Body</div>
+                 <div class="col text-right">+10 €</div>
+               </q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Full Body</div>
+                 <div class="col text-right">+20 €</div>
+               </q-card-section>
+             </q-card-section>
+           </q-card>
+         </q-card-section>
+       </q-card-section>
+      <q-card-section style="width: 100%; min-width: 300px;" class="row flex-center text-center text-body1 text-weight-medium q-px-sm text-accent">
+
+
+
+         <!-- List -->
+         <q-card-section class="col-12-xs col-md-4">
            <q-card style="max-width: 50%; min-width: 300px;" class="dense-text bg-primary column col">
-             <q-card-section class="q-py-sm">Finish Costs</q-card-section>
+            <q-card-section class="q-py-sm">Rendering</q-card-section>
              <q-separator size="2px" style="width: 90%;" class="rounded-borders self-center bg-accent"></q-separator>
              <q-card-section>
                <q-card-section class="row text-no-wrap q-py-xs">
@@ -108,6 +137,9 @@
              <q-separator size="2px" style="width: 90%;" class="rounded-borders self-center bg-accent"></q-separator>
              <q-card-section class="q-gutter-md">
               <q-card-section class="row q-py-xs">
+                 <div class="col">Additional characters will add 50% of the Lineart & Framing cost</div>
+               </q-card-section>
+               <q-card-section class="row q-py-xs">
                  <div class="col">Detailed or highly technical objects may incur a flat variable cost</div>
                </q-card-section>
                <q-card-section class="row q-py-xs">
