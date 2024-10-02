@@ -46,7 +46,7 @@
       <q-card-section>
         <div  style="width: 100%;" class="bg-info avatar-container">
           <div style="border-radius: 100px;" class="q-pa-md text-h6 text-center text-secondary text-weight-bold bg-accent">
-            I'm Currently <span class="text-primary">accepting</span> commissions
+            I'm currently <span class="text-primary">accepting</span> commissions
           </div>
         </div>
       </q-card-section>
