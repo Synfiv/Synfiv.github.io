@@ -9,14 +9,17 @@
     >
       <div class="column text-center col-shrink full-width">
         <q-card class="bg-accent q-pb-md column">
+
+          <!-- Headline -->
           <q-card-section
             flat
-            class="text-h3 q-py-xs q-px-none bg-secondary column flex-center text-weight-medium text-primary text-shadow"
+            class="text-h4 q-px-none bg-secondary column flex-center text-weight-medium text-primary text-shadow"
           >
-            <div class="q-pa-md">Detailed Pricing Information</div>
+            <div>Detailed Pricing Information</div>
           </q-card-section>
           <q-separator class="bg-blue-8" size="5px"></q-separator>
-          <div class="q-px-xl">
+
+          <!-- Text -->
             <q-card-section
               >In this page you can find the rough guideliens of how I evaluate
               the cost for a commission. To contact me, please message my social
@@ -43,7 +46,6 @@
               For questions and inquiries regarding 3D modelling or animation,
               please contact me directly.
             </q-card-section>
-          </div>
         </q-card>
       </div>
       <div class="column text-center col-grow full-width">
@@ -71,27 +73,9 @@
 
           <!-- Contents-->
           <q-section class="row justify-center">
-            <div class="col-6 column bg-red">
-              <div class="row bg-blue">
-                <div class="col-6">Rough Sketch</div>
-                <div class="col-6">€€€</div>
-              </div>
-              <div class="row bg-blue">
-                <div class="col-6">Refined Sketch</div>
-                <div class="col-6">€€€</div>
-              </div>
-              <div class="row bg-blue">
-                <div class="col-6">Inked</div>
-                <div class="col-6">€€€</div>
-              </div>
-              <div class="row bg-blue">
-                <div class="col-6">Simple Colors</div>
-                <div class="col-6">€€€</div>
-              </div>
-              <div class="row bg-blue">
-                <div class="col-6">Simple Colors</div>
-                <div class="col-6">€€€</div>
-              </div>
+            <div class="column">
+              <div>Section</div>
+              <div>Section</div>
             </div>
           </q-section>
         </q-card>
