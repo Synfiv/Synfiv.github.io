@@ -1,86 +1,143 @@
 <template>
-  <q-page
-    padding
-    class="row justify-center items-stretch content-stretch q-pa-none"
-  >
-    <!-- content -->
+  <q-page style="max-width: 100%;" padding>
+
+
+    <!-- Main Div-->
     <div
-      class="column items-stretch content-stretch col-lg-6 col-md-8 col-xs-12 no-wrap"
-    >
-      <div class="column text-center col-shrink full-width">
-        <q-card class="bg-accent q-pb-md column">
+      style="max-width: 1000px;"
+      class="  column flex-center primary-transparent q-py-md rounded-borders"
+      >
 
-          <!-- Headline -->
-          <q-card-section
-            flat
-            class="text-h4 q-px-none bg-secondary column flex-center text-weight-medium text-primary text-shadow"
-          >
-            <div>Detailed Pricing Information</div>
-          </q-card-section>
-          <q-separator class="bg-blue-8" size="5px"></q-separator>
+        <q-separator size="4px" style="width: 95%;" class="rounded-borders bg-accent"></q-separator>
 
-          <!-- Text -->
-            <q-card-section
-              >In this page you can find the rough guideliens of how I evaluate
-              the cost for a commission. To contact me, please message my social
-              media accounts, or use my E-mail:
-              <div class="text-primary text-weight-regular text-shadow">
-                synfiv@gmail.com
-              </div>
-            </q-card-section>
-            <q-card-section>
-              I tend to set the price based on the amount of effort as-well as
-              time that certain aspects of a piece take. The tables set out in
-              this page are guidelines for the prince range I will be asking
-              based on the desired outcome. It is flexible and depends on the
-              piece in question.
-            </q-card-section>
-            <q-card-section>
-              A very basic sketch can be provided ahead of the payment being
-              transferred to demonstrate the skeleton of the piece at no charge
-              or commitment (within reason), and once a satisfactory price is
-              agreed on a partial payment of the price will be asked for before
-              work starts.
-            </q-card-section>
-            <q-card-section class="text-primary text-shadow">
-              For questions and inquiries regarding 3D modelling or animation,
-              please contact me directly.
-            </q-card-section>
-        </q-card>
-      </div>
-      <div class="column text-center col-grow full-width">
-        <q-card flat square class="bg-accent q-py-md column col">
+        <!-- Headline -->
+      <q-card-section>
+        <div style="border-radius: 100px;" class="q-pa-md text-h5 text-center text-secondary text-weight-bold bg-accent">
+          Commission Prices
+        </div>
+      </q-card-section>
 
-          <!-- Headline -->
-          <q-section>
-            <q-separator
-                      inline
-                      size="4px"
-                      color="primary"
-                    ></q-separator>
-            <q-card-section
-              flat
-              class="text-h3 q-py-xs q-px-none bg-dark column flex-center text-weight-medium text-primary text-shadow"
-            >
-              <div class="q-pa-md">Headshot</div>
-            </q-card-section>
-            <q-separator
-                      inline
-                      size="4px"
-                      color="primary"
-                    ></q-separator>
-          </q-section>
+      <q-separator size="2px" style="width: 30%;" class="rounded-borders bg-accent"></q-separator>
 
-          <!-- Contents-->
-          <q-section class="row justify-center">
-            <div class="column">
-              <div>Section</div>
-              <div>Section</div>
+      <!-- Intro Text -->
+      <q-card-section style="width: 75%; min-width: 300px;" class="flex flex-center text-center text-body1 text-weight-medium q-px-sm text-accent">
+        <div class="dense-text q-pb-sm">
+              Below you can find a rough breakdown of the prices I would charge for different types of art. Note that while the price will not vary by a lot from the written sum, the exact cost will depend on the piece.
             </div>
-          </q-section>
-        </q-card>
+            <div class="dense-text q-pb-sm">
+              You can find specific information on what I will and will not draw in the Terms page.
+            </div>
+            <div class="dense-text q-pb-sm">
+              For questions or inquiries about Animation (both 2D and 3D) or modelling, please contact me.
+            </div>
+      </q-card-section>
+      <q-separator size="2px" style="width: 30%;" class="rounded-borders bg-accent"></q-separator>
+
+      <!-- Pricing -->
+      <q-card-section style="width: 100%; min-width: 300px;" class="row flex-center text-center text-body1 text-weight-medium q-px-sm text-accent">
+
+        <!-- List -->
+         <q-card-section class="col-12-xs col-md-4">
+           <q-card style="max-width: 50%; min-width: 300px;" class="dense-text bg-primary column col">
+             <q-card-section class="q-py-sm">Base Cost</q-card-section>
+             <q-separator size="2px" style="width: 90%;" class="rounded-borders self-center bg-accent"></q-separator>
+             <q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Headshot</div>
+                 <div class="col text-right">5 €</div>
+               </q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Upper Body</div>
+                 <div class="col text-right">10 €</div>
+               </q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Full Body</div>
+                 <div class="col text-right">20 €</div>
+               </q-card-section>
+             </q-card-section>
+           </q-card>
+         </q-card-section>
+
+         <!-- List -->
+         <q-card-section class="col-12-xs col-md-4">
+           <q-card style="max-width: 50%; min-width: 300px;" class="dense-text bg-primary column col">
+             <q-card-section class="q-py-sm">Finish Costs</q-card-section>
+             <q-separator size="2px" style="width: 90%;" class="rounded-borders self-center bg-accent"></q-separator>
+             <q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Color</div>
+                 <div class="col text-right">+5 €</div>
+               </q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Lighting</div>
+                 <div class="col text-right">+10 €</div>
+               </q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Shading</div>
+                 <div class="col text-right">+15 €</div>
+               </q-card-section>
+             </q-card-section>
+           </q-card>
+         </q-card-section>
+
+         <!-- List -->
+         <q-card-section class="col-12 row flex-center">
+           <q-card style="max-width: 50%; min-width: 300px;" class="dense-text bg-primary column col">
+             <q-card-section class="q-py-sm">Other</q-card-section>
+             <q-separator size="2px" style="width: 90%;" class="rounded-borders  self-center bg-accent"></q-separator>
+             <q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Simple Background</div>
+                 <div class="col text-right">+5 €</div>
+               </q-card-section>
+               <q-card-section class="row text-no-wrap q-py-xs">
+                 <div class="col text-left">Detailed Background</div>
+                 <div class="col text-right">+10 €</div>
+               </q-card-section>
+             </q-card-section>
+           </q-card>
+         </q-card-section>
+      </q-card-section>
+      <q-card-section style="width: 100%; min-width: 300px;" class="row flex-center text-center text-body1 text-weight-medium q-px-sm text-accent">
+        <q-separator size="2px" style="width: 30%;" class="rounded-borders bg-accent"></q-separator>
+        <!-- List -->
+        <q-card-section style="width: 100%;" class="column flex-center">
+          <q-card style="max-width: 100%; min-width: 300px;" class="dense-text bg-primary column col">
+            <q-card-section class="q-py-sm">Additional price points</q-card-section>
+            <q-card-section class="q-py-sm">These costs will be discussed and agreed upon with the initial commission</q-card-section>
+             <q-separator size="2px" style="width: 90%;" class="rounded-borders self-center bg-accent"></q-separator>
+             <q-card-section class="q-gutter-md">
+              <q-card-section class="row q-py-xs">
+                 <div class="col">Detailed or highly technical objects may incur a flat variable cost</div>
+               </q-card-section>
+               <q-card-section class="row q-py-xs">
+                 <div class="col">Complex outfits or bodies may incur a flat variable cost</div>
+               </q-card-section>
+               <q-card-section class="row q-py-xs">
+                 <div class="col">NSFW subjects cost an additional flat +5 €</div>
+               </q-card-section>
+             </q-card-section>
+           </q-card>
+         </q-card-section>
+      </q-card-section>
+      <q-separator size="2px" style="width: 30%;" class="rounded-borders bg-accent"></q-separator>
+
+
+      <q-card-section></q-card-section>
+    <q-separator size="4px" style="width: 95%;" class="rounded-borders bg-accent"></q-separator>
+
+    <!-- Navigation Buttons -->
+    <div class="q-py-md full-width flex-center justify-center text-no-wrap  row">
+      <q-btn to="/" exact style="min-height: 50px;" no-caps class="col-xs-9 col-md-3 text-h6" text-color="accent" color="secondary" label="Go Back" />
+      <div class="q-py-md full-width flex-center justify-center text-no-wrap q-gutter-y-md q-gutter-x-xs row">
+        <q-btn disable to="/Showcase" exact style="min-height: 50px;" no-caps class="col-xs-9 col-md-5 text-h5 text-weight-medium" text-color="secondary" color="accent" label="Showcase (WIP)" />
+        <q-btn to="/aboutPage" exact style="min-height: 50px;" no-caps class="col-xs-9 col-md-3 text-h6" text-color="secondary" color="accent" label="About" />
+        <q-btn to="/termsPage" exact style="min-height: 50px;" no-caps class="col-xs-9 col-md-3 text-h6" text-color="secondary" color="accent" label="Terms" />
       </div>
     </div>
+
+    <q-separator size="4px" style="width: 95%;" class="rounded-borders bg-accent"></q-separator>
+  </div>
   </q-page>
 </template>
 
@@ -88,86 +145,5 @@
 import { ref } from "vue";
 export default {
   name: "PricesPage",
-
-  setup() {
-    const lineartEntries = ref([
-      {
-        label: "Rough Lines",
-        price: "5 €",
-      },
-      {
-        label: "Sketched Lines",
-        price: "10 €",
-      },
-      {
-        label: "Solid Lines",
-        price: "20 €",
-      },
-      {
-        label: "Inked Lines",
-        price: "30 €",
-      },
-    ]);
-    const colorEntries = ref([
-      {
-        label: "Monochrome",
-        price: "None",
-      },
-      {
-        label: "Flat Colors",
-        price: "5 €",
-      },
-      {
-        label: "Simple Tones",
-        price: "10 €",
-      },
-      {
-        label: "Complex Tones",
-        price: "20 €",
-      },
-    ]);
-    const shadingEntries = ref([
-      {
-        label: "No Shading",
-        price: "None",
-      },
-      {
-        label: "Basic Shading",
-        price: "5 €",
-      },
-      {
-        label: "Complex Shading",
-        price: "10 €",
-      },
-      {
-        label: "Rendered Shading",
-        price: "20 €",
-      },
-    ]);
-    const framingEntries = ref([
-      {
-        label: "Headshot",
-        price: "5 €",
-      },
-      {
-        label: "Upper-Body",
-        price: "10 €",
-      },
-      {
-        label: "¾-Body",
-        price: "15 €",
-      },
-      {
-        label: "Full-Body",
-        price: " 20€",
-      },
-    ]);
-    return {
-      lineartEntries,
-      colorEntries,
-      shadingEntries,
-      framingEntries,
-    };
-  },
 };
 </script>

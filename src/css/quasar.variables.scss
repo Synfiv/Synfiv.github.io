@@ -13,8 +13,8 @@
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
 $primary: #e19c3b;
-$secondary: #459ad6;
-$accent: #2f353c;
+$secondary: rgb(69, 154, 214);
+$accent: rgb(47, 53, 60);
 
 $dark: #232931;
 $dark-page: #121212;
@@ -27,9 +27,58 @@ $warning: #e6e047;
 $typography-font-family: "Quicksand", Quicksand !default;
 $body-font-size: var(--q-theme-font-size, 1.1rem);
 
-.body--light {
-  background-color: #242a32;
-  color: #eee;
+
+.text-para {
+  line-height: 1rem;
+  font-size: large;
+}
+.dense-text {
+  line-height: 1.1rem;
+}
+.round-container {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.header-name {
+  font-size: 3rem;
+  font-weight: 500;
+  color: $secondary;
+}
+.primary-transparent {
+  background-color: rgba(225, 156, 59, 0.6);
+}
+.secondary-transparent {
+  background-color: rgba(47, 53, 60,0.6);
+}
+.blue-transparent {
+  background-color: rgba(69, 154, 214,0.6);
+}
+.secondary-text {
+  color: $secondary;
+}
+.site-background {
+  position: absolute;
+  top: -10px;
+  height: 100%;
+  width: 100%;
+  background-image: url("Images\SynfivImage1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  z-index: -1;
+}
+.avatar-container {
+  padding: 4px;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  -ms-border-radius: 75px;
+  -o-border-radius: 75px;
 }
 .border {
   border: 5px solid #dfdfdf;
@@ -37,4 +86,12 @@ $body-font-size: var(--q-theme-font-size, 1.1rem);
 .text-shadow {
   text-shadow: 1px 1px 2px black;
 }
-
+.section-headline {
+  border-bottom: 5px solid #459ad6 !important;
+  border-top: 5px solid #459ad6 !important;
+  margin: 10px auto;
+}
+.body--light {
+  background-color: #242a32;
+  color: #eee;
+}

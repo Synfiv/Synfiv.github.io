@@ -1,102 +1,65 @@
 <template>
-  <q-page
-    padding
-    class="smallerFont row justify-center q-pa-none items-stretch content-stretch"
-  >
-    <!-- content -->
+  <q-page class="column flex-center" style="max-width: 100%; overflow: clip;" padding>
+
+
+    <!-- Main Div-->
     <div
-      class="column items-stretch content-stretch col-lg-6 col-md-8 col-xs-12 no-wrap"
-    >
-      <div class="column text-center col-shrink full-width">
-        <q-card square flat class="bg-accent q-pa-none column">
-          <q-card-section
-            flat
-            class="text-h3 q-pa-xs bg-secondary column flex-center text-weight-medium text-primary text-shadow"
-          >
-            <div class="q-py-md">
-              A bit about myself and my history with art
+      style="max-width: 1000px;"
+      class="  column flex-center primary-transparent q-py-md rounded-borders"
+      >
+
+        <q-separator size="4px" style="width: 95%;" class="rounded-borders bg-accent"></q-separator>
+
+        <!-- Commission Status -->
+      <q-card-section>
+        <div style="border-radius: 100px;" class="q-pa-md text-h5 text-center text-secondary text-weight-bold bg-accent">
+          A bit about myself
+        </div>
+      </q-card-section>
+
+      <q-separator size="2px" style="width: 30%;" class="rounded-borders bg-accent"></q-separator>
+
+      <!-- Intro Text -->
+      <q-card-section style="width: 75%; min-width: 300px;" class="flex flex-center text-center text-body1 text-weight-medium q-px-sm text-accent">
+            <div class="dense-text q-pb-sm">
+              Hi, my name is Saru, and I'm an aspiring digital artist and enjoyer of synthetic beings. I have been drawing casually for several years, and the past 6 years I have been working digitally and actively trying to improve my abilities.
             </div>
-          </q-card-section>
-          <q-separator class="bg-blue-8" size="5px"></q-separator>
-          <div class="q-px-sm">
-            <q-card-section class="q-px-none">
-              <div class="q-px-none">
-                Hello, I'm known as Saru, and art has been an interest of mine
-                from a young age. After being a hobby in my younger years I have
-                invested more time into it after getting a drawing tablet
-                several years ago which allowed me to work digitally, through
-                which I began to open my work to others.
-              </div>
-            </q-card-section>
-            <q-card-section flat>
-              <div>
-                Most of my work tends to be oriented around subjects with a more
-                recent expansions into scene and landscape oriented pieces,
-                while at the same time I try to explore different styles and
-                approaches to the drawing process. Thus I have been spending
-                more time on it, which encouraged me to create my online
-                presence and by extension this website.
-              </div>
-            </q-card-section>
-            <q-card-section flat>
-              <div>
-                Most of my published work is in 2D, though I also have a history
-                with 3D animation having gotten into it years ago with 3DS Max
-                as a viewmodel animator, being particularly familiar with
-                animations handling weapons. Since 2020 I have moved on from Max
-                to Blender, having a learning curve to re-learn the workflows
-                and picking up modelling/sculpting too.
-              </div>
-            </q-card-section>
-            <q-card-section></q-card-section>
-          </div>
-        </q-card>
-      </div>
-      <div class="column text-center col-shrink full-width">
-        <q-card flat class="bg-accent q-py-md column">
-          <q-card-section
-            flat
-            class="text-h3 q-py-xs bg-secondary column flex-center text-weight-medium text-primary text-shadow"
-          >
-            <div class="q-pa-md">Interested in my work?</div>
-          </q-card-section>
-          <q-separator class="bg-blue-8" size="5px"></q-separator>
-          <q-card-section flat>
-            <div>
-              I'm always working on improving my works and looking to challenge
-              myself, so commissions are very much welcome so long as my queue
-              is not full. I'm open to all subjects, even ones not included in
-              my published works, inquiries are welcome!
+            <div class="dense-text q-pb-sm">
+              Most of my work focuses on subject drawings, but I often try to branch out with experimental art-styles and subjects.
             </div>
-          </q-card-section>
-          <q-card-section flat>
-            <div>
-              For information about commissions, and pricing in particular, please view the Prices page where you can
-              find a breakdown.
-              I am happy to draw most subjects and characters with few exceptions and like to challenge myself even if the prompt is not something I am practiced with, though I reserve the right to decline a commission if I'm not personally comfortable with the themes or content involved. I tend to send frequent progress updates to show how the art develops, though if it gets too much I can be asked to reduce how often I do so. I aim to finish working on a piece within a couple of days to a week, depending on the emount of effort required, and try to provide an estimate of when it will be wrapped up. Frequent input is welcome.
+            <div class="dense-text">
+              Much of my work is of synths as I find the concept interesting and love their visual design. However, I still enjoy drawing most other types of subjects.
             </div>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="column text-center col-shrink full-width">
-        <q-card flat square class="bg-accent q-pa-md column">
-          <q-card-section flat
-            ><div class="text-h6">
-              Most importantly, thank you for your interest in me and my work!
-            </div>
-            <div class="text-subtitle1">
-              This website is still in an early state, and will be expanded over
-              time.
-            </div>
-          </q-card-section>
-        </q-card>
+      </q-card-section>
+      <q-separator size="2px" style="width: 30%;" class="rounded-borders bg-accent"></q-separator>
+      <q-card-section style="width: 75%; min-width: 300px;" class="flex flex-center text-center text-body1 text-weight-medium q-px-sm text-accent">
+        <div class="dense-text">
+          Thank you for your interest in my work, and should you be interested in a commission, you can find information in the Pricing and Terms pages
+        </div>
+      </q-card-section>
+      <q-card-section></q-card-section>
+
+
+
+    <q-separator size="4px" style="width: 95%;" class="rounded-borders bg-accent"></q-separator>
+
+    <!-- Navigation Buttons -->
+    <div class="q-py-md full-width flex-center justify-center text-no-wrap  row">
+      <q-btn to="/" exact style="min-height: 50px;" no-caps class="col-xs-9 col-md-3 text-h6" text-color="accent" color="secondary" label="Go Back" />
+      <div class="q-py-md full-width flex-center justify-center text-no-wrap q-gutter-y-md q-gutter-x-xs row">
+        <q-btn disable to="/Showcase" exact style="min-height: 50px;" no-caps class="col-xs-9 col-md-5 text-h5 text-weight-medium" text-color="secondary" color="accent" label="Showcase (WIP)" />
+        <q-btn to="/PricesPage" exact style="min-height: 50px;" no-caps class="col-xs-9 col-md-3 text-h6" text-color="secondary" color="accent" label="Commissions" />
+        <q-btn to="/termsPage" exact style="min-height: 50px;" no-caps class="col-xs-9 col-md-3 text-h6" text-color="secondary" color="accent" label="Terms" />
       </div>
     </div>
+
+    <q-separator size="4px" style="width: 95%;" class="rounded-borders bg-accent"></q-separator>
+  </div>
   </q-page>
 </template>
 
 <script>
 export default {
-  name: "AboutPage",
-};
+  name: 'IndexPage',
+}
 </script>
