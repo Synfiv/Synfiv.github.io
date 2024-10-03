@@ -105,6 +105,17 @@
           <q-icon><q-img src="./website/furaffinity.svg"></q-img></q-icon>
         </q-btn>
       </div>
+      <div class="q-pa-xs bg-accent round-container">
+        <q-btn
+        round
+        href="https://trello.com/b/0wQ8K87Z/synfiv"
+        target="_blank"
+        color="secondary"
+        style="min-height: 50px; min-width: 50px;"
+        >
+          <q-icon><q-img src="./website/trello.svg"></q-img></q-icon>
+        </q-btn>
+      </div>
           </div>
 
   </q-page>
